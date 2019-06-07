@@ -1,0 +1,11 @@
+docker run -it --link some-mysql --rm mysql bash
+
+mysqldump -h some-mysql -u root -p mysql > mysql.sql
+mysql mysql < hello.sql
+
+create database shop;
+
+show databases;
+
+# где храняться сами базы
+show variables like 'datadir';
